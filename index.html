@@ -1,12 +1,9 @@
-Here's a complete, ready-to-use `index.html` file that presents your privacy policy as a clean, modern web page. You can upload this to GitHub Pages or any static hosting service.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Privacy Policy for ezFlower – your data stays on your device. No personal data is collected by the app itself.">
-    <title>Privacy Policy · ezFlower</title>
+    <title>Privacy Policy · ezFlowcuz</title>
     <style>
         * {
             margin: 0;
@@ -16,14 +13,14 @@ Here's a complete, ready-to-use `index.html` file that presents your privacy pol
 
         body {
             background: #f5f7fc;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
             line-height: 1.5;
-            color: #1a2c3e;
-            padding: 2rem 1rem;
+            color: #1e2a3e;
+            padding: 2rem 1.5rem;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 880px;
             margin: 0 auto;
             background: white;
             border-radius: 28px;
@@ -33,296 +30,247 @@ Here's a complete, ready-to-use `index.html` file that presents your privacy pol
         }
 
         .header {
-            background: linear-gradient(135deg, #1e3c2c 0%, #2a5a3a 100%);
+            background: linear-gradient(135deg, #0b2b3f 0%, #1a4a6f 100%);
             padding: 2rem 2rem 1.8rem;
-            text-align: center;
+            color: white;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         .header h1 {
             font-size: 2rem;
             font-weight: 600;
             letter-spacing: -0.3px;
-            color: white;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
-        .header .app-sub {
-            color: #d9e6cf;
-            font-size: 1rem;
-            font-weight: 400;
-            border-top: 1px solid rgba(255,255,255,0.2);
-            display: inline-block;
-            padding-top: 0.6rem;
-            margin-top: 0.6rem;
-        }
-
-        .effective {
-            background: #fef7e0;
-            border-left: 4px solid #e0a800;
-            padding: 0.75rem 1.5rem;
+        .header .app-badge {
             font-size: 0.9rem;
-            color: #7a6300;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .effective span {
-            background: #fff2cc;
-            padding: 0.2rem 0.7rem;
-            border-radius: 30px;
-            font-size: 0.8rem;
+            opacity: 0.85;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            margin-top: 0.5rem;
         }
 
         .content {
             padding: 2rem 2rem 2.5rem;
         }
 
-        .section {
+        .policy-section {
             margin-bottom: 2rem;
             scroll-margin-top: 1rem;
         }
 
-        .section h2 {
-            font-size: 1.5rem;
+        .policy-section h2 {
+            font-size: 1.6rem;
             font-weight: 600;
-            color: #1e3c2c;
-            border-left: 5px solid #4c9a6f;
+            color: #0c4e6e;
+            border-left: 5px solid #2c8cbb;
             padding-left: 1rem;
             margin-bottom: 1rem;
-            margin-top: 0.2rem;
+            margin-top: 0.25rem;
         }
 
-        .section p, .section li {
+        .policy-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f5e7e;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .policy-section p {
+            margin-bottom: 0.9rem;
             color: #2c3f4f;
-            margin-bottom: 0.75rem;
         }
 
-        .section ul, .section ol {
-            margin-left: 1.8rem;
-            margin-bottom: 1rem;
+        .policy-section ul, .policy-section ol {
+            margin: 0.75rem 0 1rem 1.8rem;
         }
 
-        .section li {
+        .policy-section li {
             margin-bottom: 0.4rem;
         }
 
-        .badge-local {
-            background: #eef4ff;
-            border-radius: 20px;
-            padding: 1rem 1.2rem;
-            display: inline-block;
-            margin: 0.5rem 0 0.8rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #065f46;
-            border: 1px solid #cbdde6;
+        .data-list {
+            background: #f8fafd;
+            padding: 0.8rem 1rem 0.8rem 2rem;
+            border-radius: 18px;
+            margin: 1rem 0;
+            list-style-type: none;
         }
 
-        .badge-local i {
-            font-style: normal;
-            font-weight: 600;
-        }
-
-        .third-party-card {
-            background: #f8fafc;
-            border-radius: 20px;
-            padding: 1.2rem 1.5rem;
-            margin-top: 0.8rem;
-            border: 1px solid #e2edf2;
-        }
-
-        .third-party-card p {
+        .data-list li {
             margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.6rem;
         }
 
-        .link-list {
-            list-style: none;
-            margin-left: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 0.6rem;
-        }
-
-        .link-list li {
-            margin-bottom: 0;
-        }
-
-        .link-list a {
-            background: white;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            text-decoration: none;
+        .data-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #2c8cbb;
             font-weight: 500;
-            font-size: 0.85rem;
-            border: 1px solid #cbdde6;
-            transition: all 0.2s;
-            display: inline-block;
-            color: #1e3c2c;
         }
 
-        .link-list a:hover {
-            background: #e9f3ef;
-            border-color: #4c9a6f;
+        .third-party-list {
+            background: #fef7e0;
+            border-left: 4px solid #f4b942;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+        }
+
+        .third-party-list p {
+            margin-bottom: 0.3rem;
         }
 
         a {
-            color: #2c7a4b;
+            color: #1f7b9e;
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.2s;
             font-weight: 500;
-            border-bottom: 1px dotted #aac7b5;
         }
 
         a:hover {
-            color: #1e593a;
-            border-bottom: 1px solid #1e593a;
-        }
-
-        .contact-box {
-            background: #f1f9f4;
-            border-radius: 24px;
-            padding: 1.2rem 1.5rem;
-            margin-top: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 1rem;
+            border-bottom-color: #1f7b9e;
+            color: #0b4f6c;
         }
 
         .contact-email {
+            background: #eef2f9;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
             font-family: monospace;
-            font-size: 1rem;
-            background: white;
-            padding: 0.5rem 1rem;
-            border-radius: 60px;
-            border: 1px solid #cfe3d6;
-            word-break: break-all;
+            font-size: 0.95rem;
+            display: inline-block;
+            margin-top: 0.25rem;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
         }
 
         .footer-note {
             margin-top: 2rem;
-            font-size: 0.8rem;
+            padding-top: 1rem;
+            font-size: 0.85rem;
             text-align: center;
-            border-top: 1px solid #e2edf2;
-            padding-top: 1.8rem;
-            color: #5f7f6e;
-        }
-
-        hr {
-            margin: 1rem 0;
-            border: 0;
-            height: 1px;
-            background: #e2edf2;
+            color: #5b6f82;
+            border-top: 1px solid #e9edf2;
         }
 
         @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
             .content {
                 padding: 1.5rem;
             }
             .header h1 {
                 font-size: 1.7rem;
             }
-            .section h2 {
-                font-size: 1.3rem;
+            .policy-section h2 {
+                font-size: 1.4rem;
             }
-            .contact-box {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        }
+
+        .badge-icon {
+            display: inline-block;
+            background: #eef2fa;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.7rem;
+            color: #1f5e7e;
+            margin-left: 0.6rem;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <h1>📱 ezFlower · Privacy Policy</h1>
-        <div class="app-sub">Your tasks, habits & data — always under your control</div>
-    </div>
-    <div class="effective">
-        📅 Effective Date: <strong>March 25, 2026</strong>
-        <span>🔒 No cloud uploads</span>
+        <h1>Privacy Policy <span style="font-weight:400;">for ezFlowcuz</span></h1>
+        <div class="app-badge">📱 Local-first · No data collection</div>
+        <p style="margin-top: 0.8rem; opacity:0.9; font-size:0.9rem;"><strong>Effective Date:</strong> March 25, 2026</p>
     </div>
     <div class="content">
         <!-- 1. Introduction -->
-        <div class="section" id="intro">
+        <section class="policy-section">
             <h2>1. Introduction</h2>
-            <p>Welcome to ezFlower ("the App"). This Privacy Policy explains how we handle your information when you use our App. We are committed to protecting your privacy.</p>
-        </div>
+            <p>Welcome to ezFlowcuz (“the App”). This Privacy Policy explains how we handle your information when you use our App. We are committed to protecting your privacy.</p>
+        </section>
 
         <!-- 2. Data Collection and Storage -->
-        <div class="section" id="data-collection">
+        <section class="policy-section">
             <h2>2. Data Collection and Storage</h2>
-            <p><strong>ezFlower does not collect, transmit, or upload any personal data to external servers.</strong> All data generated by your use of the App is stored locally on your device only, using the Hive database. The data includes:</p>
-            <ul>
-                <li><strong>Settings:</strong> App preferences such as first-time launch status, dark/light mode settings.</li>
-                <li><strong>Tasks & Habits:</strong> Your to-do tasks, once tasks, habits, and related items.</li>
-                <li><strong>Categories:</strong> Custom categories you create for organizing tasks and habits.</li>
-                <li><strong>Timer Data:</strong> Selected timer presets and timer duration records.</li>
-                <li><strong>Statistics:</strong> Historical data related to your habits, categories, monthly habit records, and once tasks.</li>
+            <p>ezFlowcuz <strong>does not collect, transmit, or upload any personal data to external servers</strong>. All data generated by your use of the App is stored locally on your device only, using the Hive database. The data includes:</p>
+            <ul class="data-list">
+                <li><strong>Settings</strong> – App preferences such as first-time launch status, dark/light mode settings.</li>
+                <li><strong>Tasks & Habits</strong> – Your to-do tasks, once tasks, habits, and related items.</li>
+                <li><strong>Categories</strong> – Custom categories you create for organizing tasks and habits.</li>
+                <li><strong>Timer Data</strong> – Selected timer presets and timer duration records.</li>
+                <li><strong>Statistics</strong> – Historical data related to your habits, categories, monthly habit records, and once tasks.</li>
             </ul>
-            <div class="badge-local">
-                📀 All this information remains on <strong>your device</strong>. You have full control over this data, and you can delete it at any time by clearing the App's data or uninstalling the App.
-            </div>
-        </div>
+            <p>All this information remains on your device. You have full control over this data, and you can delete it at any time by clearing the App’s data or uninstalling the App.</p>
+        </section>
 
-        <!-- 3. Third-Party Services -->
-        <div class="section" id="third-party">
+        <!-- 3. Third-Party Services (AdMob & MobFox) -->
+        <section class="policy-section">
             <h2>3. Third-Party Services</h2>
             <p>While we do not collect your data, the App uses third-party advertising services that may collect certain information to provide and improve ads. These services include:</p>
-            <div class="third-party-card">
-                <p><strong>📢 Google AdMob</strong> &nbsp;|&nbsp; <strong>📢 MobFox</strong></p>
-                <p>These third-party services may automatically collect data such as:</p>
-                <ul>
-                    <li>Device information (e.g., device model, operating system version, advertising ID)</li>
-                    <li>IP address</li>
-                    <li>App usage data (e.g., ad views, clicks)</li>
-                    <li>Approximate location (if permission is granted)</li>
-                </ul>
-                <p>This information is collected and processed by Google AdMob and MobFox in accordance with their own privacy policies. <strong>We do not have access to or control over the data collected by these third parties.</strong></p>
-                <ul class="link-list">
-                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">📄 Google AdMob Privacy Policy</a></li>
-                    <li><a href="https://www.mobfox.com/privacy-policy/" target="_blank" rel="noopener noreferrer">📄 MobFox Privacy Policy</a></li>
-                </ul>
+            <div class="third-party-list">
+                <p>📢 <strong>Google AdMob</strong><br>📢 <strong>MobFox</strong></p>
             </div>
-        </div>
+            <p>These third-party services may automatically collect data such as:</p>
+            <ul>
+                <li>Device information (e.g., device model, operating system version, advertising ID)</li>
+                <li>IP address</li>
+                <li>App usage data (e.g., ad views, clicks)</li>
+                <li>Approximate location (if permission is granted)</li>
+            </ul>
+            <p>This information is collected and processed by Google AdMob and MobFox in accordance with their own privacy policies. We do not have access to or control over the data collected by these third parties.</p>
+            <p>🔗 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a><br>
+            🔗 <a href="https://www.mobfox.com/privacy-policy/" target="_blank" rel="noopener noreferrer">MobFox Privacy Policy</a></p>
+        </section>
 
         <!-- 4. Data Security -->
-        <div class="section" id="security">
+        <section class="policy-section">
             <h2>4. Data Security</h2>
             <p>Since all user-generated data remains locally on your device, we rely on the security features of your operating system and device to protect it. For third-party advertising services, they implement industry-standard security measures to protect the data they process.</p>
-        </div>
+        </section>
 
-        <!-- 5. Children's Privacy -->
-        <div class="section" id="children">
-            <h2>5. Children's Privacy</h2>
-            <p>This App is not designed for children under the age of 13, and we do not knowingly collect any information from such users. Regarding advertising, each ad platform has its own policies concerning children.</p>
-        </div>
+        <!-- 5. Children’s Privacy -->
+        <section class="policy-section">
+            <h2>5. Children’s Privacy</h2>
+            <p>The App does not knowingly collect any personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
+        </section>
 
         <!-- 6. Changes to This Privacy Policy -->
-        <div class="section" id="changes">
+        <section class="policy-section">
             <h2>6. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Any changes will be posted within the App or on this page, and the "Effective Date" will be updated accordingly.</p>
-        </div>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted within the App or on this page, and the “Effective Date” will be updated accordingly.</p>
+        </section>
 
         <!-- 7. Contact Us -->
-        <div class="section" id="contact">
+        <section class="policy-section">
             <h2>7. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <div class="contact-box">
-                <span class="contact-email">📧 sayaru225.dev@gmail.com</span>
-                <a href="mailto:sayaru225.dev@gmail.com" style="border-bottom: none; background: #e6f0ea; padding: 0.4rem 1rem; border-radius: 40px;">Send email →</a>
-            </div>
-        </div>
+            <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+            <span class="contact-email">📧 sayaru225.dev@gmail.com</span></p>
+        </section>
 
+        <hr>
         <div class="footer-note">
-            🌿 ezFlower — designed with privacy in mind. No cloud, no tracking, just your personal productivity space.
+            <span>🔒 ezFlowcuz — Your data stays yours. Always local, always private.</span><br>
+            <span style="font-size:0.75rem;">Last updated: March 25, 2026</span>
         </div>
     </div>
 </div>
 </body>
 </html>
-```
