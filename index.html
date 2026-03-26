@@ -1,333 +1,343 @@
+Here is an HTML document that presents the privacy policy for ezFlowcuz as a clean, responsive webpage.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Privacy Policy · ezFlowcuz</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>ezFlowcuz · Privacy Policy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background: #f1f5f9;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-            line-height: 1.5;
-            color: #0f172a;
-            padding: 2rem 1.5rem;
-        }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background: #f2f5f9;
+      padding: 2rem 1.25rem;
+      line-height: 1.5;
+      color: #1a2c3e;
+    }
 
-        /* improved container – soft card with clean air */
-        .container {
-            max-width: 880px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
-            transition: all 0.2s ease;
-            overflow: hidden;
-        }
+    /* card container */
+    .privacy-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+      overflow: hidden;
+      transition: background 0.2s, color 0.2s;
+    }
 
-        /* refined header – minimal elegance */
-        .header {
-            background: #ffffff;
-            padding: 2.2rem 2rem 1.8rem;
-            border-bottom: 1px solid #eef2f8;
-        }
+    .privacy-inner {
+      padding: 2rem 1.8rem;
+    }
 
-        .header h1 {
-            font-size: 2rem;
-            font-weight: 650;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #0f2c39 0%, #1e5a7a 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
-        }
+    /* header section */
+    .policy-header {
+      border-bottom: 1px solid #e9edf2;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
 
-        .header .app-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: #eef4ff;
-            color: #1e5a7a;
-            font-size: 0.8rem;
-            font-weight: 500;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            backdrop-filter: none;
-            margin-top: 0.5rem;
-            letter-spacing: -0.2px;
-        }
+    .app-name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      background: linear-gradient(135deg, #1F6E8C, #2C7DA0);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
 
-        .header .effective {
-            margin-top: 0.9rem;
-            font-size: 0.85rem;
-            color: #5c6f87;
-            border-top: 1px solid #ecf3f9;
-            padding-top: 0.9rem;
-            display: inline-block;
-            width: 100%;
-        }
+    .effective-date {
+      display: inline-block;
+      background: #eef2fa;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      color: #1e4a6b;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
 
-        /* content spacing */
-        .content {
-            padding: 2rem 2rem 2.5rem;
-        }
+    .subhead {
+      color: #4a627a;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
 
-        /* sections with generous breathing */
-        .policy-section {
-            margin-bottom: 2.4rem;
-            scroll-margin-top: 1rem;
-        }
+    /* typography */
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
 
-        .policy-section h2 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #0f2c3b;
-            letter-spacing: -0.01em;
-            margin-bottom: 1rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 2px solid #e6edf4;
-            display: inline-block;
-            width: 100%;
-        }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 1.6rem 0 0.8rem 0;
+      color: #0f2c3f;
+      border-left: 4px solid #2C7DA0;
+      padding-left: 1rem;
+    }
 
-        .policy-section h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #22668d;
-            margin: 1.2rem 0 0.5rem 0;
-        }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1.2rem 0 0.5rem 0;
+      color: #1f4e6e;
+    }
 
-        .policy-section p {
-            margin-bottom: 1rem;
-            color: #1e2f3e;
-            line-height: 1.55;
-        }
+    p, li {
+      color: #2c3f4f;
+      margin-bottom: 0.75rem;
+    }
 
-        .policy-section ul, .policy-section ol {
-            margin: 0.75rem 0 1rem 1.5rem;
-        }
+    .data-list {
+      background: #f8fafd;
+      border-radius: 20px;
+      padding: 1.2rem 1.5rem;
+      margin: 1rem 0;
+      list-style-type: none;
+    }
 
-        .policy-section li {
-            margin-bottom: 0.45rem;
-            color: #253c4e;
-        }
+    .data-list li {
+      margin-bottom: 0.9rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
 
-        /* modern data list – soft card style */
-        .data-list {
-            background: #fafcff;
-            padding: 1rem 1.2rem 1rem 2rem;
-            border-radius: 20px;
-            margin: 1.2rem 0;
-            list-style-type: none;
-            border: 1px solid #eef2fa;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-        }
+    .data-list li strong {
+      color: #145c7a;
+    }
 
-        .data-list li {
-            margin-bottom: 0.7rem;
-            position: relative;
-            padding-left: 1.6rem;
-            font-weight: 450;
-        }
+    .data-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #2C7DA0;
+      font-weight: 600;
+    }
 
-        .data-list li::before {
-            content: "●";
-            position: absolute;
-            left: 0;
-            color: #2c8fbb;
-            font-size: 1rem;
-            font-weight: 600;
-        }
+    .badge-note {
+      background: #eef2fc;
+      border-left: 3px solid #2C7DA0;
+      padding: 0.75rem 1rem;
+      border-radius: 14px;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
 
-        /* third-party block – warm, informative but subtle */
-        .third-party-list {
-            background: #fffbee;
-            border-left: 4px solid #f5b042;
-            border-radius: 18px;
-            padding: 1.2rem 1.5rem;
-            margin: 1.2rem 0;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-        }
+    a {
+      color: #1f6e8c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
 
-        .third-party-list p {
-            margin-bottom: 0.4rem;
-        }
+    a:hover {
+      border-bottom-color: #1f6e8c;
+    }
 
-        .third-party-list strong {
-            color: #b45f1b;
-        }
+    .third-party-grid {
+      background: #f8fafd;
+      border-radius: 20px;
+      padding: 1.2rem 1.5rem;
+      margin: 1rem 0;
+    }
 
-        a {
-            color: #217faa;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid transparent;
-            transition: all 0.2s ease;
-        }
+    .third-party-item {
+      margin-bottom: 1rem;
+    }
 
-        a:hover {
-            color: #0b5e84;
-            border-bottom-color: #7bb3ce;
-        }
+    .third-party-item:last-child {
+      margin-bottom: 0;
+    }
 
-        /* email chip */
-        .contact-email {
-            background: #eef3fc;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-family: 'SF Mono', 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 0.3rem;
-            border: 1px solid #dde7f0;
-            color: #1f5e7e;
-        }
+    .contact-email {
+      background: #f0f4fa;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 60px;
+      font-family: monospace;
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
 
-        hr {
-            margin: 2rem 0 1rem;
-            border: none;
-            border-top: 1px solid #e6edf4;
-        }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #5b6f82;
+    }
 
-        .footer-note {
-            margin-top: 1.8rem;
-            padding-top: 1.2rem;
-            font-size: 0.8rem;
-            text-align: center;
-            color: #59748f;
-            border-top: 1px solid #eef2f8;
-        }
+    hr {
+      margin: 1rem 0;
+      border: none;
+      border-top: 1px solid #e2e8f0;
+    }
 
-        /* responsive touches */
-        @media (max-width: 640px) {
-            body {
-                padding: 1rem;
-            }
-            .content {
-                padding: 1.5rem;
-            }
-            .header {
-                padding: 1.5rem 1.5rem 1.2rem;
-            }
-            .header h1 {
-                font-size: 1.7rem;
-            }
-            .policy-section h2 {
-                font-size: 1.4rem;
-            }
-            .data-list {
-                padding: 0.8rem 1rem 0.8rem 1.5rem;
-            }
-            .third-party-list {
-                padding: 1rem;
-            }
-        }
+    /* dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #10171f;
+        color: #e2e8f0;
+      }
+      .privacy-card {
+        background: #1b2631;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.4);
+      }
+      .policy-header {
+        border-bottom-color: #2d3e4e;
+      }
+      h2 {
+        color: #cbdde9;
+        border-left-color: #4d9eb7;
+      }
+      h3 {
+        color: #b9d4e5;
+      }
+      p, li, .subhead {
+        color: #cddfea;
+      }
+      .data-list, .third-party-grid {
+        background: #0f1a24;
+      }
+      .data-list li strong {
+        color: #86c8e0;
+      }
+      .badge-note {
+        background: #11212e;
+        border-left-color: #4d9eb7;
+      }
+      .effective-date {
+        background: #1b3443;
+        color: #b9dcf5;
+      }
+      .contact-email {
+        background: #11212e;
+        color: #c4e2f2;
+      }
+      footer {
+        border-top-color: #2a3a48;
+        color: #92a9bd;
+      }
+      a {
+        color: #6eb4cc;
+      }
+      a:hover {
+        border-bottom-color: #8fcbe2;
+      }
+    }
 
-        /* subtle details */
-        .badge-icon {
-            display: none; /* legacy unused class, removed from design */
-        }
-
-        .policy-section ul:not(.data-list) li::marker {
-            color: #2c8fbb;
-        }
-
-        /* optional inline accent for list */
-        .policy-section ul li, .policy-section ol li {
-            margin-left: 0.2rem;
-        }
-    </style>
+    /* mobile adjustments */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+      .privacy-inner {
+        padding: 1.5rem;
+      }
+      .app-name {
+        font-size: 1.6rem;
+      }
+      .effective-date {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 0.5rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      .data-list, .third-party-grid {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <h1>Privacy Policy <span style="font-weight:450;">for ezFlowcuz</span></h1>
-        <div class="app-badge">
-            📱 Local-first · No data collection
-        </div>
-        <div class="effective">
-            <strong>Effective Date:</strong> March 25, 2026
-        </div>
+<div class="privacy-card">
+  <div class="privacy-inner">
+    <div class="policy-header">
+      <h1>
+        <span class="app-name">ezFlowcuz</span>
+        <span class="effective-date">Effective: March 25, 2026</span>
+      </h1>
+      <div class="subhead">Privacy-first by design · Your data stays on your device</div>
     </div>
-    <div class="content">
-        <!-- 1. Introduction -->
-        <section class="policy-section">
-            <h2>1. Introduction</h2>
-            <p>Welcome to ezFlowcuz (“the App”). This Privacy Policy explains how we handle your information when you use our App. We are committed to protecting your privacy.</p>
-        </section>
 
-        <!-- 2. Data Collection and Storage -->
-        <section class="policy-section">
-            <h2>2. Data Collection and Storage</h2>
-            <p>ezFlowcuz <strong>does not collect, transmit, or upload any personal data to external servers</strong>. All data generated by your use of the App is stored locally on your device only, using the Hive database. The data includes:</p>
-            <ul class="data-list">
-                <li><strong>Settings</strong> – App preferences such as first-time launch status, dark/light mode settings.</li>
-                <li><strong>Tasks & Habits</strong> – Your to-do tasks, once tasks, habits, and related items.</li>
-                <li><strong>Categories</strong> – Custom categories you create for organizing tasks and habits.</li>
-                <li><strong>Timer Data</strong> – Selected timer presets and timer duration records.</li>
-                <li><strong>Statistics</strong> – Historical data related to your habits, categories, monthly habit records, and once tasks.</li>
-            </ul>
-            <p>All this information remains on your device. You have full control over this data, and you can delete it at any time by clearing the App’s data or uninstalling the App.</p>
-        </section>
+    <!-- 1. Introduction -->
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>ezFlowcuz</strong> (“the App”). This Privacy Policy explains how we handle your information when you use our App. We are committed to protecting your privacy and ensuring transparency about data practices.</p>
 
-        <!-- 3. Third-Party Services (AdMob & MobFox) -->
-        <section class="policy-section">
-            <h2>3. Third-Party Services</h2>
-            <p>While we do not collect your data, the App uses third-party advertising services that may collect certain information to provide and improve ads. These services include:</p>
-            <div class="third-party-list">
-                <p>📢 <strong>Google AdMob</strong><br>📢 <strong>MobFox</strong></p>
-            </div>
-            <p>These third-party services may automatically collect data such as:</p>
-            <ul>
-                <li>Device information (e.g., device model, operating system version, advertising ID)</li>
-                <li>IP address</li>
-                <li>App usage data (e.g., ad views, clicks)</li>
-                <li>Approximate location (if permission is granted)</li>
-            </ul>
-            <p>This information is collected and processed by Google AdMob and MobFox in accordance with their own privacy policies. We do not have access to or control over the data collected by these third parties.</p>
-            <p>🔗 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a><br>
-            🔗 <a href="https://www.mobfox.com/privacy-policy/" target="_blank" rel="noopener noreferrer">MobFox Privacy Policy</a></p>
-        </section>
-
-        <!-- 4. Data Security -->
-        <section class="policy-section">
-            <h2>4. Data Security</h2>
-            <p>Since all user-generated data remains locally on your device, we rely on the security features of your operating system and device to protect it. For third-party advertising services, they implement industry-standard security measures to protect the data they process.</p>
-        </section>
-
-        <!-- 5. Children’s Privacy -->
-        <section class="policy-section">
-            <h2>5. Children’s Privacy</h2>
-            <p>The App does not knowingly collect any personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
-        </section>
-
-        <!-- 6. Changes to This Privacy Policy -->
-        <section class="policy-section">
-            <h2>6. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Any changes will be posted within the App or on this page, and the “Effective Date” will be updated accordingly.</p>
-        </section>
-
-        <!-- 7. Contact Us -->
-        <section class="policy-section">
-            <h2>7. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:<br>
-            <span class="contact-email">📧 sayaru225.dev@gmail.com</span></p>
-        </section>
-
-        <hr>
-        <div class="footer-note">
-            <span>🔒 ezFlowcuz — Your data stays yours. Always local, always private.</span><br>
-            <span style="font-size:0.72rem;">Last updated: March 25, 2026</span>
-        </div>
+    <!-- 2. Data Collection and Storage -->
+    <h2>2. Data Collection and Storage</h2>
+    <p><strong>ezFlowcuz does not collect, transmit, or upload any personal data to external servers.</strong> All data generated by your use of the App is stored <strong>locally on your device only</strong>, using the Hive database. You remain in full control, and you can delete all data at any time by clearing the App’s data or uninstalling the App.</p>
+    
+    <p>The following types of information are stored locally on your device:</p>
+    <ul class="data-list">
+      <li><strong>Settings</strong> — App preferences such as first-time launch status, dark/light mode selection, and language preference (e.g., if you select German, the App will remember this and automatically apply it the next time you open the App). <em>Please note that translations may not be 100% accurate.</em></li>
+      <li><strong>Tasks & Habits</strong> — Your to-do tasks, once tasks, habits, and all related items.</li>
+      <li><strong>Categories</strong> — Custom categories you create for organizing tasks and habits.</li>
+      <li><strong>Timer Data</strong> — Selected timer presets and timer duration records.</li>
+      <li><strong>Statistics</strong> — Historical data related to your habits, categories, monthly habit records, and once tasks.</li>
+    </ul>
+    <div class="badge-note">
+      🔒 All this information remains strictly on your device. No cloud sync, no remote servers, no background transmission.
     </div>
+
+    <!-- 3. Third-Party Services -->
+    <h2>3. Third-Party Services</h2>
+    <p>While we do not collect your personal data, the App uses third-party advertising services that may collect certain information to provide and improve ads. These services include:</p>
+    <div class="third-party-grid">
+      <div class="third-party-item"><strong>• Google AdMob</strong></div>
+      <div class="third-party-item"><strong>• MobFox</strong></div>
+    </div>
+    <p>These third-party services may automatically collect data such as:</p>
+    <ul style="margin-left: 1.8rem; margin-bottom: 1rem;">
+      <li>Device information (e.g., device model, operating system version, advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data (e.g., ad views, clicks, session interactions)</li>
+      <li>Approximate location (if permission is granted)</li>
+    </ul>
+    <p>This information is collected and processed by Google AdMob and MobFox in accordance with their own privacy policies. <strong>We do not have access to or control over the data collected by these third parties.</strong> For more details about their data handling, please review their policies:</p>
+    <p>📄 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a><br>
+    📄 <a href="https://www.mobfox.com/privacy-policy/" target="_blank" rel="noopener noreferrer">MobFox Privacy Policy</a></p>
+
+    <!-- 4. Data Security -->
+    <h2>4. Data Security</h2>
+    <p>Since all user-generated data remains locally on your device, we rely on the built-in security features of your operating system and device hardware to protect it. For third-party advertising services, they implement industry-standard security measures to protect the data they process. However, no system is 100% immune, and we encourage you to keep your device updated.</p>
+
+    <!-- 5. Children’s Privacy -->
+    <h2>5. Children’s Privacy</h2>
+    <p>The App does not knowingly collect any personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal information (e.g., via advertising SDKs), please contact us so we can take appropriate action. We are committed to complying with applicable children’s privacy regulations.</p>
+
+    <!-- 6. Changes to This Privacy Policy -->
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. Any changes will be posted within the App or on this page, and the “Effective Date” at the top will be updated accordingly. We encourage you to review this policy periodically.</p>
+
+    <!-- 7. Contact Us -->
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the App’s privacy practices, please reach out:</p>
+    <p class="contact-email">📧 <a href="mailto:sayaru225.dev@gmail.com">sayaru225.dev@gmail.com</a></p>
+    <p>We will respond as soon as possible.</p>
+
+    <footer>
+      © 2026 ezFlowcuz — Built with local-first philosophy. Your privacy, your control.
+    </footer>
+  </div>
 </div>
 </body>
 </html>
+```
